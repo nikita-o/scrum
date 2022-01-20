@@ -1,7 +1,7 @@
 <template>
 <v-app-bar app clipped-left>
   <v-app-bar-nav-icon @click="toggleDrawer()"/>
-  <v-toolbar-title>MY EPTA</v-toolbar-title>
+  <v-toolbar-title>NIRA</v-toolbar-title>
 
 <v-spacer></v-spacer>
 

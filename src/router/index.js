@@ -9,6 +9,7 @@ import Board from '../views/Board.vue'
 import Repositories from '../views/Repositories.vue'
 import Chat from '../views/Chat.vue'
 import Setting from '../views/Setting.vue'
+import CloudFile from '../views/CloudFile.vue'
 
 import NotFound from '../views/404.vue'
 
@@ -54,6 +55,11 @@ const routes = [
     path: '/setting',
     name: 'Setting',
     component: Setting
+  },
+  {
+    path: '/cloud',
+    name: 'CloudFile',
+    component: CloudFile
   },
   {
     path: '*',

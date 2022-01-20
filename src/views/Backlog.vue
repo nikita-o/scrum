@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-btn v-on:click="sprints.push({})">Создать спринт</v-btn>
     <v-expansion-panels>
       <v-expansion-panel 
         v-for="(item,i) in sprints"
@@ -36,19 +37,33 @@
           >
             test {{i}}
           </div>
-          <v-btn v-on:click="backlog.push({})">
-            Создать задачу
-          </v-btn>
+          <v-text-field
+            label="Что нужно сделать?"
+            type="text"
+            v-model="message"
+          >
+          <template v-slot:prepend>
+            <v-select
+              
+              label="Standard"
+            ></v-select>
+          </template>
+          <template v-slot:append-outer>
+            <v-btn v-on:click="backlog.push({})">
+              Создать задачу
+            </v-btn>
+            </template>
+          </v-text-field>
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <v-btn v-on:click="sprints.push({})">Создать спринт</v-btn>
   </div>
 </template>
 
 <script>
 export default {
   data: () => ({
+    message: '',
     backlog: [],
     sprints: []
   }),

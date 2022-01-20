@@ -36,14 +36,14 @@
         ],
         desserts: [
           {
-            summary: 'Frozen Yogurt',
-            description: 'test',
-            updated: 1,
+            summary: 'Задача о писателях',
+            description: 'лабка',
+            updated: '20.01.2022',
           },
           {
-            summary: 'Frozen Yogurt',
-            description: 'test',
-            updated: 1,
+            summary: 'Топ проект',
+            description: 'херня какая то',
+            updated: '20.01.2022',
           },
         ],
       }

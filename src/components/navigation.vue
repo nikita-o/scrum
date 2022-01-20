@@ -70,8 +70,8 @@ export default {
   data: () => ({
       selectedItem: 0, // здесь типо id выбранного пункта меню (пригодится мб)
       items: [
-        { text: 'Аккаунт', icon: 'mdi-folder', url: {name: "Home"}},
-        { text: 'Дорожная карта', icon: 'mdi-account-multiple', url: {name: "RoadMap"} },
+        { text: 'Облачное хранилище', icon: 'mdi-folder', url: {name: "CloudFile"}},
+        // { text: 'Дорожная карта', icon: 'mdi-account-multiple', url: {name: "RoadMap"} },
         { text: 'Бэклог', icon: 'mdi-star', url: {name: "Backlog"}},
         { text: 'Доска', icon: 'mdi-history', url: {name: "Board"} },
         { text: 'Код', icon: 'mdi-upload', url: {name: "Repositories"} },
